@@ -37,3 +37,7 @@ class TestUser(unittest.TestCase):
             test_user=User("Test","user","password","password")
             test_user.save_detail()
             self.assertEqual(len(User.user_detail),3)
+
+        def test_display_all_details(self):
+            """ this method returns a list of account details"""
+            self.assertEqual(User.display_all_details(),User.user_detail)
