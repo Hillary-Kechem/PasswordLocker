@@ -112,6 +112,16 @@ def main():
                     print(f'Your account password is {user.password}. Keep your passwords always safe.')
                     print(dash)
                     print('\n')
+                    print(f'{user_name} please enter te short codes to continue..')
 
 
-
+        elif short_code =='fa':
+            print(f'{user_name}, enter the username you want to search for..')
+            search_username= input()
+            if check_existing_user(search_username):
+                 search_username= find_user(search_username)
+            print(dash)
+            print(f'Account is {search_username.account_name}.com')
+            print(f'Account username is {search_username.username}')
+            print(f'Account password is {search_username.password}Keep your passwords safe')
+            print(dash)
