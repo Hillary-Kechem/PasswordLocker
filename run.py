@@ -118,15 +118,24 @@ def main():
         elif short_code =='fa':
             print(f'{user_name}, enter the username you want to search for..')
             search_username= input()
+
             if check_existing_user(search_username):
                  search_username= find_user(search_username)
-            print(dash)
-            print(f'Account is {search_username.account_name}.com')
-            print(f'Account username is {search_username.username}')
-            print(f'Account password is {search_username.password}Keep your passwords safe')
-            print(dash)
+                 print(dash)
+                 print(f'Account is {search_username.account_name}.com')
+                 print(f'Account username is {search_username.username}')
+                 print(f'Account password is {search_username.password}Keep your passwords safe')
+                 print(dash)
+                 print(f'{user_name} please enter te short codes to continue..')
+
+            else:
+                print(f'{user_name} That account does not exist, please search again')
+                print(f'{user_name} please enter te short codes to continue..')
+        
+        elif short_code == "ex":
+             print("Goodbye and dont foret to rate our app..")
+             break
+        else :
+            print("Please use correct code")
             print(f'{user_name} please enter te short codes to continue..')
 
-        else:
-            print(f'{user_name} That account does not exist, please search again')
-            print(f'{user_name} please enter te short codes to continue..')
