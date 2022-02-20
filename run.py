@@ -73,3 +73,12 @@ def main():
         fa-Find accounts
         ex-Exit\n''')
         print(list)
+
+        short_code= input().lower()
+
+        if short_code == 'na':
+            print (f"{user_name} please fill in the following fields:")
+            print ("_"*7)
+            print ("Account Name")
+            account_name = input()
+            print ('\n')
