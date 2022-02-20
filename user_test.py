@@ -41,3 +41,6 @@ class TestUser(unittest.TestCase):
         def test_display_all_details(self):
             """ this method returns a list of account details"""
             self.assertEqual(User.display_all_details(),User.user_detail)
+
+        if __name__== '__main__':
+            unittest.main()
