@@ -65,3 +65,11 @@ def main():
     user_name= input().upper()
     print(f"Hello {user_name},welcome to password manager, what would you like to do?")
     print("\n")
+    
+    while True:
+        list=('''
+        na-Register a new account
+        da-display accounts
+        fa-Find accounts
+        ex-Exit\n''')
+        print(list)
