@@ -125,3 +125,8 @@ def main():
             print(f'Account username is {search_username.username}')
             print(f'Account password is {search_username.password}Keep your passwords safe')
             print(dash)
+            print(f'{user_name} please enter te short codes to continue..')
+
+        else:
+            print(f'{user_name} That account does not exist, please search again')
+            print(f'{user_name} please enter te short codes to continue..')
