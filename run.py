@@ -82,3 +82,8 @@ def main():
             print ("Account Name")
             account_name = input()
             print ('\n')
+
+            print("Username")
+            username= input()
+            print('\n')
+
