@@ -87,3 +87,13 @@ def main():
             username= input()
             print('\n')
 
+            print("Please supply your password..")
+            password=getpass('password:')
+            print("********")
+            confirm_password = getpass('password:')
+            print('********')
+            save_details(create_account(account_name,username,password,confirm_password))
+            print('\n')
+
+
+
