@@ -21,3 +21,19 @@ class TestUser(unittest.TestCase):
             self.assertEqual(self.new_user.username,"beliot")
             self.assertEqual(self.new_user.password,"password")
             self.assertEqual(self.new_user.confirm_password,"password")
+        
+        def test_save_detail(self):
+            """
+            the test_save_detail checks if the detail is saved in the details
+            """
+            self.new_user.save_detail()
+            self.assertEqual(len(User.user_detail),1)
+
+        def test_save_multiple_detail(self):
+            """
+            method that checks if we can save multiple details
+            """
+            self.new_user.save_detail()
+            test_user=User("Test","user","password","password")
+            test_user.save_detail()
+            self.assertEqual(len(User.user_detail),3)
