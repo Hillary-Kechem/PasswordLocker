@@ -55,3 +55,13 @@ def generatePassword(num):
 
    return genpas
 
+def main():
+    print('{:_^5}'.format('PASSWORD LOCKER, no need to write down your passwords!!'))
+
+    print('\n')
+    print('{:_^10}'.format('LOGIN'))
+    print('\n')
+    print("hi there, please supply your name")
+    user_name= input().upper()
+    print(f"Hello {user_name},welcome to password manager, what would you like to do?")
+    print("\n")
