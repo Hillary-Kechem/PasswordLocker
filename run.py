@@ -95,5 +95,23 @@ def main():
             save_details(create_account(account_name,username,password,confirm_password))
             print('\n')
 
+            print(dash)
+            print('\n')
+            print(f'{user_name} please enter te short codes to continue..')
+
+        elif short_code=='da':
+            if display_all_details():
+                print(f"{user_name} below is all your accounts")
+                print('\n')
+
+                for user in display_all_details():
+                    print(dash)
+
+                    print(f'Account is {user.account_name}.com')
+                    print(f'Account username is {user.username}.')
+                    print(f'Your account password is {user.password}. Keep your passwords always safe.')
+                    print(dash)
+                    print('\n')
+
 
 
